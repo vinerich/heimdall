@@ -1,5 +1,39 @@
 # Changelog
 
+## [0.11.0-alpha](https://github.com/dadrus/heimdall/compare/v0.10.1-alpha...v0.11.0-alpha) (2023-07-27)
+
+
+### ⚠ BREAKING CHANGES
+
+* `values` property for endpoint teplating must be configured on the mechanism conf level ([#746](https://github.com/dadrus/heimdall/issues/746))
+
+### New Features
+
+* HTTP method expansion with placeholder key words ([#774](https://github.com/dadrus/heimdall/issues/774)) ([d25be3b](https://github.com/dadrus/heimdall/commit/d25be3b8a3504f229841476392a650cf97fded73))
+* New CEL and template functions to ease access to different parts of the request and beyond ([#689](https://github.com/dadrus/heimdall/issues/689)) ([730b220](https://github.com/dadrus/heimdall/commit/730b2206fdfc688ca42bcdf0e344d8fa6bfba232))
+* Support of env variables in rule sets loaded by the `file_system` provider using Bash syntax ([#775](https://github.com/dadrus/heimdall/issues/775)) ([6fa6415](https://github.com/dadrus/heimdall/commit/6fa6415da12ede1285ffbe9e9c58a774036c5f05))
+* Values object can be used in payload of generic contextualizer and remote authorizer ([#749](https://github.com/dadrus/heimdall/issues/749)) ([42267cb](https://github.com/dadrus/heimdall/commit/42267cbc074049be92dfb5ad205236691900399a))
+
+
+### Code Refactorings
+
+* `values` property for endpoint teplating must be configured on the mechanism conf level ([#746](https://github.com/dadrus/heimdall/issues/746)) ([9809fe4](https://github.com/dadrus/heimdall/commit/9809fe4d9bb6c5161af1fe47887dafcb2eaefa89))
+
+
+### Bug Fixes
+
+* Loading of structured configuration from env variables ([#768](https://github.com/dadrus/heimdall/issues/768)) ([a76c722](https://github.com/dadrus/heimdall/commit/a76c722072640ddb628f2a8f2ba48fe7ab53e360))
+
+
+### Updated Dependencies
+
+* update dependency bootstrap to v5.3.1 ([#799](https://github.com/dadrus/heimdall/issues/799)) ([dfbd035](https://github.com/dadrus/heimdall/commit/dfbd035fdfe730eb2e1c6ad7bb238bcf3588e286))
+* update golang.org/x/exp digest to 515e97e ([#783](https://github.com/dadrus/heimdall/issues/783)) ([7239d31](https://github.com/dadrus/heimdall/commit/7239d31c6af131ef9eb4eee4fc04962d0f838c0c))
+* update google.golang.org/genproto/googleapis/rpc digest to 23370e0 ([#803](https://github.com/dadrus/heimdall/issues/803)) ([b75549e](https://github.com/dadrus/heimdall/commit/b75549e5a60dccb3c1b8f9d99fccf1a158365fa8))
+* update google.golang.org/genproto/googleapis/rpc digest to b022f6e ([#798](https://github.com/dadrus/heimdall/issues/798)) ([86d8c8d](https://github.com/dadrus/heimdall/commit/86d8c8dd0d8ed6d87b690974bcee9687e51b5594))
+* update module github.com/tidwall/gjson to v1.15.0 ([#809](https://github.com/dadrus/heimdall/issues/809)) ([7a68ff2](https://github.com/dadrus/heimdall/commit/7a68ff2a48c8d990949ed7748ba3b86a1e372114))
+* update module google.golang.org/grpc to v1.57.0 ([#804](https://github.com/dadrus/heimdall/issues/804)) ([82be54a](https://github.com/dadrus/heimdall/commit/82be54a13e603088b7411cce741c9c71601b28aa))
+
 ## [0.10.1-alpha](https://github.com/dadrus/heimdall/compare/v0.10.0-alpha...v0.10.1-alpha) (2023-06-28)
 
 
